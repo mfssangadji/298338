@@ -32,7 +32,7 @@
     
     <link rel="stylesheet" href="{{ asset('lte/dist/js/sweetalert/sweetalert2.min.css') }}">
   </head>
-  <body class="hold-transition skin-blue layout-boxed sidebar-mini">
+  <body class="hold-transition skin-blue layout sidebar-mini">
     <div class="wrapper">
       <header class="main-header">
         @include('298338.parts.header')

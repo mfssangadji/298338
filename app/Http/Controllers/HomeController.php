@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Home;
 use App\Album;
 use App\Gallery;
+use App\Pdce;
 use Illuminate\Http\Request;
 use Orchestra\Parser\Xml\Facade as XmlParser;
 use Carbon\carbon;
@@ -24,10 +25,6 @@ class HomeController extends Controller
         for($i=0; $i<count($xml->forecast->area); $i++){
             $area[] = $xml->forecast->area[$i];
         }
-
-        // echo '<pre>';
-        // print_r($area);
-        // die();
 
         $forcast = array();
         foreach($area as $area){
@@ -69,9 +66,6 @@ class HomeController extends Controller
         }
 
         $now = new DateTime();
-
-        // echo '<pre>';
-        // print_r($forecast);
         
         foreach($forecast as $key => $val){
             if($val['weather']['type'] == "hourly"){ // HOURLY JUST FOR WEATHER 
@@ -101,9 +95,14 @@ class HomeController extends Controller
             }
         }
 
-        // echo '<pre>';
-        // print_r($dtime_comp);
-        return view('welcome', compact('forecast', 'w', 'now', 'dtime_ext'));
+        $pdce = Pdce::orderBy('id', 'DESC')->get();
+        return view('welcome', compact(
+            'forecast',
+            'w',
+            'now',
+            'dtime_ext',
+            'pdce',
+        ));
     }
 
     public function weatherCode($val)

@@ -22,7 +22,8 @@
               @csrf 
               @method('PATCH')
               <div class="form-group">
-                <input type="text" required class="form-control" value="{{$content->content}}" name="content" placeholder="Input peringatan (tekan @enter untuk menambah)">
+                <input type="text" required class="form-control" value="{{$content->content}}" name="content" placeholder="Input Aerodom WSW (tekan @enter atau tombol @update untuk merubah)">
+                <button type="submit" style="margin-top: 1px;" class="btn btn-default btn-xs">Update</button>
                 <button style="margin-top: 1px;" class="btn btn-warning btn-xs" onclick="self.history.back()">Cancel</button>
               </div>
             </form>
@@ -30,7 +31,8 @@
             <form method="post" action="{{route('aerodrom')}}">
               @csrf 
               <div class="form-group">
-                <input type="text" required class="form-control" name="content" placeholder="Input peringatan (tekan @enter untuk menambah)">
+                <input type="text" required class="form-control" name="content" placeholder="Input peringatan (tekan @enter atau tombol @insert untuk menambah)">
+                <button type="submit" style="margin-top: 1px;" class="btn btn-default btn-xs">Insert</button>
               </div>
             </form>
           @endif

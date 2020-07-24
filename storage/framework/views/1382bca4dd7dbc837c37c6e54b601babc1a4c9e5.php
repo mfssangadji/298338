@@ -8,26 +8,21 @@
     <div class="container">
 
         <!-- Testimonials -->
-        <div class="one-third columns">
+        <div class="one-third columns" style="width: 100% !important">
 
             <h3 class="margin-1">Peringatan Dini</h3>
             <!-- Testimonial Rotator -->
-            <section class="flexslider testimonial-slider">
-                <ul class="slides">
-                    <li class="testimonial">
-                        <div class="testimonials">Integer eu libero sit amet nisl vestibulum semper. Fusce costant Proin sit amet mauris odio pellentesque iaculis posuer dapibus natoque penatibus et magnis dis parturient montes.</div>
-                        <div class="testimonials-bg"></div>
-                    </li>
-                    <!-- <li class="testimonial">
-                        <div class="testimonials">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                        <div class="testimonials-bg"></div>
-                    </li> -->
-                    <div class="testimonials-author"><a href="#">Selengkapnya..</a></div>
+            <section class="flexslider testimonial-slider" style="width: 100% !important">
+                <ul class="slides" style="width: 100% !important">
+                    <?php $__currentLoopData = $pdce; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $p): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <li class="testimonial">
+                            <a href="#"><div class="testimonials">
+                                <?php echo e($p->content); ?>
+
+                            </div></a>
+                            <div class="testimonials-bg"></div>
+                        </li>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </ul>
             </section>
             <!-- Testomonial Rotator / End -->
