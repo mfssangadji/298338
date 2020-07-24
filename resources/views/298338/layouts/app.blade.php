@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{{ asset('lte/css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('lte/plugins/toast/toastr.min.css') }}">
     <link rel="stylesheet" href="{{ asset('global.css') }}">
+    <!-- summernote -->
+    <link rel="stylesheet" href="{{asset('lte/plugins/summernote/summernote-bs4.css')}}">
     <script src="{{ asset('lte/bower_components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('lte/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('lte/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
@@ -49,7 +51,10 @@
       <div class="control-sidebar-bg"></div>
     </div>
   </body>
-  <script src="{{ asset('lte/plugins/toast/toastr.min.js') }}"></script>
+  <!-- Summernote -->
+  <script src="{{asset('lte/plugins/summernote/summernote-bs4.min.js')}}"></script>
+  <script src="{{asset('lte/plugins/summernote/summernote-cleaner.js')}}"></script>
+  <script src="{{asset('lte/plugins/toast/toastr.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('global.js') }}"></script>
   @yield('scripts')
 </html>

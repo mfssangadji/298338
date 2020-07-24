@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Citra Satelit')
+@section('title', 'Gallery '.$album->name)
 @section('content')
 	<!-- 960 Container -->
 <div class="container floated">
@@ -34,7 +34,7 @@
 				<div class="four columns isotope-item photography architecture technology">
 					<a href="{{url('gallery/'.$album->id.'/image/'.$g->id)}}" class="portfolio-item isotope">
 						<figure>
-							<img src="/images/{{$g->file}}" style="height: 150px !important; width: 100%; object-fit: cover;" alt=""/>
+							<img src="/docs/{{$g->file}}" style="height: 150px !important; width: 100%; object-fit: cover;" alt=""/>
 							<figcaption class="item-description">
 								<h5>{{strip_tags(substr($g->description, 0, 20))}}..</h5>
 							</figcaption>

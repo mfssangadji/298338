@@ -57,5 +57,5 @@
   </div>
 @endsection
 @section('script')
-asd
+
 @endsection

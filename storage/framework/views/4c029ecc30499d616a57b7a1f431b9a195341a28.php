@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="<?php echo e(asset('lte/css/css.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('lte/plugins/toast/toastr.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('global.css')); ?>">
+    <!-- summernote -->
+    <link rel="stylesheet" href="<?php echo e(asset('lte/plugins/summernote/summernote-bs4.css')); ?>">
     <script src="<?php echo e(asset('lte/bower_components/jquery/dist/jquery.min.js')); ?>"></script>
     <script src="<?php echo e(asset('lte/bower_components/bootstrap/dist/js/bootstrap.min.js')); ?>"></script>
     <script src="<?php echo e(asset('lte/bower_components/datatables.net/js/jquery.dataTables.min.js')); ?>"></script>
@@ -49,6 +51,9 @@
       <div class="control-sidebar-bg"></div>
     </div>
   </body>
+  <!-- Summernote -->
+  <script src="<?php echo e(asset('lte/plugins/summernote/summernote-bs4.min.js')); ?>"></script>
+  <script src="<?php echo e(asset('lte/plugins/summernote/summernote-cleaner.js')); ?>"></script>
   <script src="<?php echo e(asset('lte/plugins/toast/toastr.min.js')); ?>"></script>
   <script type="text/javascript" src="<?php echo e(asset('global.js')); ?>"></script>
   <?php echo $__env->yieldContent('scripts'); ?>

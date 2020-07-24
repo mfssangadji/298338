@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Citra Satelit')
+@section('title', 'Gallery '.$img->album->name)
 @section('content')
 	<!-- 960 Container -->
 	<div class="container floated">
@@ -32,8 +32,8 @@
 			<section class="flexslider">
 				<ul class="slides">
 					<li>
-						<a href="/images/{{$img->file}}" rel="fancybox-gallery" title="{{$img->description}}">
-							<img src="/images/{{$img->file}}" alt="" style="height: 500px !important; width: 100% !important; object-fit: cover" />
+						<a href="/docs/{{$img->file}}" rel="fancybox-gallery" title="{{$img->description}}">
+							<img src="/docs/{{$img->file}}" alt="" style="height: 500px !important; width: 100% !important; object-fit: cover" />
 						</a>
 					</li>
 				</ul>

@@ -107,7 +107,7 @@
       </ul>
     </li>
 
-    <li class="treeview {{active('buletin')}} {{active('infografis')}} {{active('flyer')}} {{active('article')}}">
+    <li class="treeview {{active('buletin')}} {{active('infografis')}} {{active('flyer')}} {{active('articles')}}">
       <a href="#">
         <i class="fa fa-tags"></i>
         <span>Publikasi</span>
@@ -128,7 +128,7 @@
         </li>
         
         <li><a href="{{ route('flyer') }}"><i class="fa fa-circle"></i> Flyer</a></li>
-        <li><a href="{{ url('article') }}"><i class="fa fa-circle"></i> Artikel</a></li>
+        <li><a href="{{ route('articles') }}"><i class="fa fa-circle"></i> Artikel</a></li>
       </ul>
     </li>
     <li class="treeview">

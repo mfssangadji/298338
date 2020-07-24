@@ -170,3 +170,11 @@ Route::resource(config('app.root').'/album', 'AlbumController', [
 		'store'  => 'album.store'
 	]
 ]);
+/** ARTICLE **/
+Route::resource(config('app.root').'/articles', 'ArticlesController', [
+	'names' => [
+		'index'  => 'articles',
+		'create' => 'articles.add',
+		'store'  => 'articles.store'
+	]
+]);

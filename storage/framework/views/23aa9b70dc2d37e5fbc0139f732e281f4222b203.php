@@ -107,7 +107,7 @@
       </ul>
     </li>
 
-    <li class="treeview <?php echo e(active('buletin')); ?> <?php echo e(active('infografis')); ?> <?php echo e(active('flyer')); ?> <?php echo e(active('article')); ?>">
+    <li class="treeview <?php echo e(active('buletin')); ?> <?php echo e(active('infografis')); ?> <?php echo e(active('flyer')); ?> <?php echo e(active('articles')); ?>">
       <a href="#">
         <i class="fa fa-tags"></i>
         <span>Publikasi</span>
@@ -128,7 +128,7 @@
         </li>
         
         <li><a href="<?php echo e(route('flyer')); ?>"><i class="fa fa-circle"></i> Flyer</a></li>
-        <li><a href="<?php echo e(url('article')); ?>"><i class="fa fa-circle"></i> Artikel</a></li>
+        <li><a href="<?php echo e(route('articles')); ?>"><i class="fa fa-circle"></i> Artikel</a></li>
       </ul>
     </li>
     <li class="treeview">
