@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="<?php echo e(asset('lte/css/css.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('lte/plugins/toast/toastr.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('global.css')); ?>">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="<?php echo e(asset('lte/bower_components/select2/dist/css/select2.min.css')); ?>">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo e(asset('lte/plugins/summernote/summernote-bs4.css')); ?>">
     <script src="<?php echo e(asset('lte/bower_components/jquery/dist/jquery.min.js')); ?>"></script>
@@ -56,5 +58,7 @@
   <script src="<?php echo e(asset('lte/plugins/summernote/summernote-cleaner.js')); ?>"></script>
   <script src="<?php echo e(asset('lte/plugins/toast/toastr.min.js')); ?>"></script>
   <script type="text/javascript" src="<?php echo e(asset('global.js')); ?>"></script>
+  <!-- Select2 -->
+  <script src="<?php echo e(asset('lte/bower_components/select2/dist/js/select2.full.min.js')); ?>"></script>
   <?php echo $__env->yieldContent('scripts'); ?>
 </html><?php /**PATH C:\xampp\htdocs\pro\stamet-ternate\resources\views/298338/layouts/app.blade.php ENDPATH**/ ?>

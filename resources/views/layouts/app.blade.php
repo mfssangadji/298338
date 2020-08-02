@@ -119,6 +119,7 @@
 				<h5>Public</h5>
 				<ol>
 					<li><a href="{{route('citra-satelit')}}">Citra Satelit</a></li>
+					<li><a href="#">Citra Radar Ternate</a></li>
 					<li><a href="about-us.html">Prakiraan Cuaca</a></li>
 					<li><a href="flexslider.html">Peringatan Dini</a></li>
 				</ol>

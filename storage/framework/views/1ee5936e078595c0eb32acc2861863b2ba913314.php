@@ -39,7 +39,7 @@
                         <td><?php echo e($loop->iteration); ?></td>
                         <td><?php echo e($user->name); ?></td>
                         <td><?php echo e($user->email); ?></td>
-                        <td><?php if($user->status == 1): ?> Administrator <?php else: ?> Operator <?php endif; ?></td>
+                        <td><?php echo e($theusers[$user->status]); ?></td>
                         <td>
                             <a href="<?php echo e(url(config('app.root').'/users/'.$user->id.'/edit')); ?>" class="badge badge-success">edit</a> | 
                             <form method="post" action="<?php echo e(url(config('app.root').'/users/'.$user->id)); ?>" style="display:inline">

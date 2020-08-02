@@ -44,6 +44,7 @@ class FlightDocController extends Controller
         $ext = $request->file('file')->getClientOriginalExtension();
         $file = "flightdoc_".time().'.'.$ext;
         $request->file('file')->move('docs/', $file);
+        $flightdoc->maskapai = $request->maskapai;
         $flightdoc->file = $file;
         $flightdoc->save();
         return redirect()->route('flightdoc');   

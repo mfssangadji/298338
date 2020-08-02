@@ -1,6 +1,6 @@
 <a href="{{ route('dashboard') }}" class="logo">
   <span class="logo-mini"><b>C</b>P</span>
-  <span class="logo-lg">BMKG</span>
+  <span class="logo-lg">Stamet <small>Ternate</small></span>
 </a>
 <nav class="navbar navbar-static-top">
   <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -83,9 +83,9 @@
         </ul>
       </li>
       <li class="dropdown user user-menu">
-        <a href="{{ url('logout') }}" onclick="return confirm('Are you sure?')" title="Logout">
+        <a href="{{ route('logout') }}" onclick="return confirm('Are you sure?')" title="Logout">
           <img src="{{ asset('lte/dist/img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
-          <span class="hidden-xs">Logout</span>
+          <span class="hidden-xs">[{{auth()->user()->name}}] Logout</span>
         </a>
       </li>
     </ul>

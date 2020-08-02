@@ -61,5 +61,36 @@ class AppServiceProvider extends ServiceProvider
             "NNW" => "North-Northwest",
             "VARIABEL" => "berubah-ubah",
         ));
+
+        View::share('theusers', array(
+            1=>"Administrator",
+            2=>"Operator Meteo",
+            3=>"Operator Klimatologi",
+        ));
+
+        View::share('catalogcat', array(
+            1=>"Curah Hujan",
+            2=>"Suhu Udara",
+            3=>"Kelembaban Udara",
+            4=>"Arah dan Kecepatan Angin",
+            5=>"Lama Penyinaran Matahari",
+            6=>"Tekanan Udara",
+        ));
+
+        View::share('maskapai', array(
+            1=>"Air Asia",
+            2=>"Batavia Air",
+            3=>"Batik Air",
+            4=>"Citilink",
+            5=>"Garuda Indonesia",
+            6=>"Kal Star Aviation",
+            7=>"Lion Air",
+            8=>"Merpati Nusantara",
+            9=>"Mandala Airlines",
+            10=>"Sri Wijaya Air",
+            11=>"Susi Air",
+            12=>"Tiger Air",
+            13=>"Wings Air",
+        ));
     }
 }

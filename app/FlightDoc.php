@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class FlightDoc extends Model
 {
     protected $table = "flightdoc";
-    protected $fillable = ['file'];
+    protected $fillable = ['maskapai', 'file'];
 }

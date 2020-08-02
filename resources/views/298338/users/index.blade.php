@@ -38,7 +38,7 @@
                         <td>{{$loop->iteration}}</td>
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
-                        <td>@if($user->status == 1) Administrator @else Operator @endif</td>
+                        <td>{{$theusers[$user->status]}}</td>
                         <td>
                             <a href="{{url(config('app.root').'/users/'.$user->id.'/edit')}}" class="badge badge-success">edit</a> | 
                             <form method="post" action="{{ url(config('app.root').'/users/'.$user->id) }}" style="display:inline">

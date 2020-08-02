@@ -41,10 +41,7 @@
 	              <label for="status">Status</label>
 	              <select class="form-control" name="status">
 	              	<option value="" selected="" disabled="">Pilih status</option>
-	              	<?php
-	              		$arr = array(1=>"Administrator", 2=>"Operator");
-	              	?>
-	              	@foreach($arr as $key => $val)
+	              	@foreach($theusers as $key => $val)
 	              		@if($user->status == $key)
 	              			<option value="{{$key}}" selected>{{$val}}</option>
 	              		@else
