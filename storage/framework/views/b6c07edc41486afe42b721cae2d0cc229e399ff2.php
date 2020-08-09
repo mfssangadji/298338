@@ -26,7 +26,7 @@
 			<!-- Post -->
 			<article class="post">
 				<figure class="post-img picture">
-					<a href="http://202.90.198.22/IMAGE/ANIMASI/H08_EH_Malut_m18.gif" rel="fancybox" title="First Light on the Lake"><img src="http://202.90.198.22/IMAGE/ANIMASI/H08_EH_Malut_m18.gif" alt="" /></a>
+					<a href="http://202.90.198.22/IMAGE/ANIMASI/H08_EH_Malut_m18.gif" rel="fancybox" title="Citra Satelit"><img src="http://202.90.198.22/IMAGE/ANIMASI/H08_EH_Malut_m18.gif" alt="" /></a>
 				</figure>
 			</article>
 

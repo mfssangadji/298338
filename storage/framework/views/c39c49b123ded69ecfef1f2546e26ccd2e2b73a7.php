@@ -29,7 +29,12 @@
 		<!-- Page Content -->
 		<div class="eleven floated right">
 			<section class="page-content">
-				<h3 class="margin-reset">Our Location</h3>
+				<?php if($message = Session::get('success')): ?>
+				    <div class="notification success closeable">
+						<p><span>Success!</span> <?php echo e($message); ?></p>
+					</div>
+			    <?php endif; ?>
+				<h3 class="margin-reset">Lokasi Kami</h3>
 				<br />
 				<!-- Google Maps -->
 				<section class="google-map-container">
@@ -39,9 +44,7 @@
 
 
 				<h3 class="margin">Form Permintaan Data</h3>
-				<p class="margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p class="margin">Lengkapi form dibawah ini untuk melakukan permintaan data</p>
 
 					<!-- Contact Form -->
 					<section id="contact">
@@ -50,25 +53,31 @@
 						<mark id="message"></mark>
 
 						<!-- Form -->
-						<form method="post" action="contact.php" name="contactform" id="contactform">
+						<form method="POST" action="">
+							<?php echo csrf_field(); ?>
 							<fieldset>
 								<div>
 									<label for="name" accesskey="U">Name:</label>
-									<input name="name" type="text" id="name" />
+									<input name="name" required type="text" id="name" />
 								</div>
 
 								<div>
-									<label for="email" accesskey="E">Email: <span>*</span></label>
-									<input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" />
+									<label for="email" accesskey="E">Email:</label>
+									<input name="email" required type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" />
 								</div>
 
 								<div>
-									<label for="comments" accesskey="C">Message: <span>*</span></label>
-									<textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true"></textarea>
+									<label for="no_telp" accesskey="U">No. Telp:</label>
+									<input name="no_telp" required type="text" id="no_telp" />
+								</div>
+
+								<div>
+									<label for="pesan" accesskey="C">Pesan: </label>
+									<textarea name="pesan" required cols="40" rows="3" id="pesan" spellcheck="true"></textarea>
 								</div>
 
 							</fieldset>
-							<input type="submit" class="submit" id="submit" value="Send Message" />
+							<input type="submit" class="submit" id="submit" value="Kirim" />
 							<div class="clearfix"></div>
 						</form>
 

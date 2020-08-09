@@ -10,7 +10,7 @@ class PermintaanData extends Model
     protected $fillable = [
     	'nama',
     	'email',
-    	'no_hp',
+    	'no_telp',
     	'pesan',
     ];
 }

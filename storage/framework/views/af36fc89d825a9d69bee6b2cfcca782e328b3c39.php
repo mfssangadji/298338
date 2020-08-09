@@ -119,9 +119,9 @@
 				<h5>Public</h5>
 				<ol>
 					<li><a href="<?php echo e(route('citra-satelit')); ?>">Citra Satelit</a></li>
-					<li><a href="#">Citra Radar Ternate</a></li>
-					<li><a href="about-us.html">Prakiraan Cuaca</a></li>
-					<li><a href="flexslider.html">Peringatan Dini</a></li>
+					<li><a href="<?php echo e(route('citra-radar')); ?>">Citra Radar Ternate</a></li>
+					<li><a href="#">Prakiraan Cuaca</a></li>
+					<li><a href="<?php echo e(route('cuaca-ekstrim')); ?>">Peringatan Dini</a></li>
 				</ol>
 			</li>
 			<li class="col1">
@@ -130,19 +130,20 @@
 					<li><a href="<?php echo e(route('cuaca-aktual-bandara')); ?>">Cuaca Aktual Bandara</a></li>
 					<li><a href="<?php echo e(url('prakiraan-cuaca-bandara')); ?>" style="width: 300px;">Prakiraan Cuaca Bandara</a></li>
 					<li><a href="http://aviation.bmkg.go.id/web/sigmet.php" target="_blank">Sigmet</a></li>
-					<li><a href="right-sidebar.html">Var</a></li>
+					<li><a href="<?php echo e(route('var')); ?>">Var</a></li>
 					<li><a href="right-sidebar.html">Flight Document</a></li>
 					<li><a href="<?php echo e(route('sigwx')); ?>">Sigwx</a></li>
 					<li><a href="http://www.bom.gov.au/aviation/charts/wind-temperature/" target="_blank">Wind Temp</a></li>
-					<li><a href="right-sidebar.html" style="width: 300px;">Aerodrome & Wind Shear Warning</a></li>
+					<li><a href="<?php echo e(route('aerodrome')); ?>" style="width: 300px;">Aerodrome & Wind Shear Warning</a></li>
 				</ol>
 			</li>
 			<li class="col1">
 				<h5>Maritim</h5>
 				<ol>
-					<li><a href="faq.html">Prakiraan Cuaca</a></li>
+					<li><a href="<?php echo e(route('ppcwp')); ?>">Prakiraan Cuaca</a></li>
+					<li class="longli"><a href="<?php echo e(route('ppcp')); ?>">Prakiraan Cuaca Pelabuhan</a></li>
 					<li class="longli"><a href="<?php echo e(route('ptinggi-gelombang')); ?>">Prakiraan Tinggi Gelombang</a></li>
-					<li><a href="faq.html">Peringatan Dini</a></li>
+					<li><a href="<?php echo e(route('ppdgt')); ?>">Peringatan Dini</a></li>
 				</ol>
 			</li>
 		</ul>
@@ -152,8 +153,8 @@
 	<li><a href="#"><i class="halflings white tags"></i> Pelayanan Data</a>
 		<!-- Second Level / Start -->
 		<ul>
-			<li><a href="<?php echo e(route('permintaan-data')); ?>">Form Permintaan Data</a></li>
-			<li><a href="icons.html">Katalog Data</a></li>
+			<li><a href="<?php echo e(route('ppermintaan-data')); ?>">Form Permintaan Data</a></li>
+			<li><a href="<?php echo e(route('pcatalog-data')); ?>">Katalog Data</a></li>
 			<li><a href="http://dataonline.bmkg.go.id/home" target="_blank">Pusat Data Online</a></li>
 		</ul>
 		<!-- Second Level / End -->
@@ -162,10 +163,10 @@
 	<li><a href="#"><i class="halflings white pushpin"></i> Publikasi</a>
 		<!-- Second Level / Start -->
 		<ul>
-			<li><a href="portfolio-2.html">Buletin</a></li>
-			<li><a href="single-project.html">Artikel</a></li>
-			<li><a href="portfolio-3.html">Infografis</a></li>
-			<li><a href="portfolio-4.html">Flyer</a></li>
+			<li><a href="<?php echo e(route('pbuletin')); ?>">Buletin</a></li>
+			<li><a href="<?php echo e(route('pinfografis')); ?>">Infografis</a></li>
+			<li><a href="<?php echo e(route('pflyer')); ?>">Flyer</a></li>
+			<li><a href="<?php echo e(route('particle')); ?>">Artikel</a></li>
 		</ul>
 		<!-- Second Level / End -->
 	</li>

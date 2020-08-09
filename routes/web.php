@@ -16,8 +16,23 @@ use Illuminate\Support\Facades\Route;
 /** PUBLIC **/
 Route::get('/', 'HomeController@index')->name('welcome');
 Route::get('citra-satelit', 'HomeController@citra_satelit')->name('citra-satelit');
+Route::get('citra-radar', 'HomeController@citra_radar')->name('citra-radar');
+Route::get('cuaca-ekstrim', 'HomeController@cuaca_ekstrim')->name('cuaca-ekstrim');
+Route::get('var', 'HomeController@var')->name('var');
+Route::get('aerodrome', 'HomeController@aerodrome')->name('aerodrome');
+Route::get('pcwp', 'HomeController@pcwp')->name('ppcwp');
+Route::get('pcp', 'HomeController@pcp')->name('ppcp');
+Route::get('pdgt', 'HomeController@pdgt')->name('ppdgt');
+Route::get('buletin', 'HomeController@buletin')->name('pbuletin');
+Route::get('infografis', 'HomeController@infografis')->name('pinfografis');
+Route::get('flyer', 'HomeController@flyer')->name('pflyer');
+Route::get('article', 'HomeController@article')->name('particle');
+Route::get('article/{id}', 'HomeController@darticle')->name('darticle');
+
 Route::get('perkiraan-tinggi-gelombang', 'HomeController@ptinggi_gelombang')->name('ptinggi-gelombang');
-Route::get('permintaan-data', 'HomeController@permintaan_data')->name('permintaan-data');
+Route::get('permintaan-data', 'HomeController@permintaan_data')->name('ppermintaan-data');
+Route::post('permintaan-data', 'HomeController@permintaan_data_post');
+Route::get('catalog-data', 'HomeController@catalog_data')->name('pcatalog-data');
 Route::get('cuaca-aktual-bandara', 'HomeController@cuaca_aktual_bandara')->name('cuaca-aktual-bandara');
 Route::get('prakiraan-cuaca-bandara/{id?}', 'HomeController@pcuaca_bandara')->name('pcuaca-bandara');
 Route::get('sigwx', 'HomeController@sigwx')->name('sigwx');
@@ -109,7 +124,6 @@ Route::group(['middleware' => ['auth']], function(){
 		]
 	]);
 	/** PRAKIRAAN CUACA PELABUHAN **/
-	Route::resource('pcp', 'PcpController');
 	Route::resource(config('app.root').'/pcp', 'PcpController', [
 		'names' => [
 			'index'  => 'pcp',

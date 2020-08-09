@@ -133,6 +133,29 @@ class HomeController extends Controller
         return view('main.citra-satelit');
     }
 
+    public function citra_radar()
+    {
+        return view('main.citra-radar');
+    }
+
+    public function cuaca_ekstrim()
+    {
+        $pdce = Pdce::orderBy('id', 'DESC')->limit(10)->get();
+        return view('main.cuaca-ekstrim', compact('pdce'));
+    }
+
+    public function var()
+    {
+        $var = \App\Veaer::orderBy('id', 'DESC')->get();
+        return view('main.var', compact('var'));
+    }
+
+    public function aerodrome()
+    {
+        $aerodrome = \App\Awsw::orderBy('id', 'DESC')->limit(10)->get();
+        return view('main.aerodrome', compact('aerodrome'));
+    }
+
     public function ptinggi_gelombang()
     {
         $url = 'https://peta-maritim.bmkg.go.id/ofs/';
@@ -142,6 +165,72 @@ class HomeController extends Controller
     public function permintaan_data()
     {
         return view('main.permintaan-data');
+    }
+
+    public function permintaan_data_post(Request $request)
+    {
+        \App\PermintaanData::create([
+            'nama' => $request->name,
+            'email' => $request->email,
+            'no_telp' => $request->no_telp,
+            'pesan' => $request->pesan,
+        ]);
+
+        return redirect()->back()->with(['success' => 'Permintaan anda telah terkirim.']);
+    }
+
+    public function catalog_data()
+    {
+        $var = \App\Catalog::orderBy('id', 'DESC')->get();
+        return view('main.catalog-data', compact('var'));
+    }
+
+    public function pcwp()
+    {
+        $var = \App\Pcwp::orderBy('id', 'DESC')->get();
+        return view('main.pcwp', compact('var'));
+    }
+
+    public function pcp()
+    {
+        $var = \App\Pcp::orderBy('id', 'DESC')->get();
+        return view('main.pcp', compact('var'));
+    }
+
+    public function pdgt()
+    {
+        $pdgt = \App\Pdgt::orderBy('id', 'DESC')->limit(10)->get();
+        return view('main.pdgt', compact('pdgt'));
+    }
+
+    public function buletin()
+    {
+        $var = \App\Buletin::orderBy('id', 'DESC')->get();
+        return view('main.buletin', compact('var'));
+    }
+
+    public function infografis()
+    {
+        $var = \App\Infografis::orderBy('id', 'DESC')->get();
+        return view('main.infografis', compact('var'));
+    }
+
+    public function flyer()
+    {
+        $var = \App\Flyer::orderBy('id', 'DESC')->get();
+        return view('main.flyer', compact('var'));
+    }
+
+    public function article()
+    {
+        $art = \App\Article::orderBy('id', 'DESC')->get();
+        return view('main.articles', compact('art'));
+    }
+
+    public function darticle(Request $request)
+    {
+        $art = \App\Article::where('id', $request->id)->get();
+        return view('main.darticles', compact('art'));
     }
 
     public function cuaca_aktual_bandara()
