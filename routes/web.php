@@ -39,6 +39,11 @@ Route::get('sigwx', 'HomeController@sigwx')->name('sigwx');
 Route::get('gallery', 'HomeController@gallery')->name('gallery');
 Route::get('gallery/{id}', 'HomeController@gallery_detail');
 Route::get('gallery/{id}/image/{imgid}', 'HomeController@image_detail');
+Route::get('pahb', 'HomeController@pahb')->name('ppahb');
+Route::get('pm', 'HomeController@pm')->name('ppm');
+Route::get('ihth', 'HomeController@ihth')->name('pihth');
+Route::get('ipt', 'HomeController@ipt')->name('pipt');
+Route::get('kalei', 'HomeController@kalei')->name('pkalei');
 /**
  * PRIVATE
  */

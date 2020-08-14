@@ -224,13 +224,55 @@ class HomeController extends Controller
     public function article()
     {
         $art = \App\Article::orderBy('id', 'DESC')->get();
-        return view('main.articles', compact('art'));
+        foreach($art as $artx){
+            preg_match('/src="([^"]*)"/', $artx->description, $matches);
+            // echo '<pre>';
+            $rep = str_replace('"', "", $matches[0]);
+            $repx = str_replace('src=', "", $rep);
+            $img[$artx->id] = str_replace('src="', "", $repx);
+        }
+
+        // echo '<pre>';
+        // print_r($img);
+
+        return view('main.articles', compact('art', 'img'));
     }
+
 
     public function darticle(Request $request)
     {
         $art = \App\Article::where('id', $request->id)->get();
         return view('main.darticles', compact('art'));
+    }
+
+    public function pahb()
+    {
+        $var = \App\Pahb::orderBy('id', 'DESC')->get();
+        return view('main.pahb', compact('var'));
+    }
+
+    public function pm()
+    {
+        $var = \App\Pm::orderBy('id', 'DESC')->get();
+        return view('main.pm', compact('var'));
+    }
+
+    public function ihth()
+    {
+        $var = \App\Ihth::orderBy('id', 'DESC')->get();
+        return view('main.ihth', compact('var'));
+    }
+
+    public function ipt()
+    {
+        $var = \App\Ipt::orderBy('id', 'DESC')->get();
+        return view('main.ipt', compact('var'));
+    }
+
+    public function kalei()
+    {
+        $var = \App\Kalei::orderBy('id', 'DESC')->get();
+        return view('main.kalei', compact('var'));
     }
 
     public function cuaca_aktual_bandara()

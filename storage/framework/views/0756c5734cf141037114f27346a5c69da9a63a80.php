@@ -21,7 +21,7 @@
             <form method="post" action="<?php echo e(route('pm')); ?>" enctype="multipart/form-data">
               <?php echo csrf_field(); ?> 
               <div class="form-group">
-                <button class="btn btn-primary btn-xs pull-left" style="float: left;">Upload</button><input type="file" class="" style="border:none" name="file">
+                <button class="btn btn-primary btn-xs pull-left" style="float: left;">Upload</button><input type="file" required class="" style="border:none" name="file">
               </div>
             </form>
           <table class="table table-bordered table-striped" id="postTable">

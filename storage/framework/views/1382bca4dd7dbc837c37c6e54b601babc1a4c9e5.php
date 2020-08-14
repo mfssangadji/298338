@@ -91,8 +91,8 @@
             <div class="one-third column">
                 <article class="icon-box">
                     <i class="icon-bullhorn"></i>
-                    <h3>Clean Design</h3>
-                    <p>Incredibly clean design provides you powerful way to grow your business.</p>
+                    <h3>Cepat & Tepat</h3>
+                    <!-- <p>Incredibly clean design provides you powerful way to grow your business.</p> -->
                 </article>
             </div>
             <!-- Icon Box End -->
@@ -101,8 +101,8 @@
             <div class="one-third column">
                 <article class="icon-box">
                     <i class="icon-magic"></i>
-                    <h3>Responsive</h3>
-                    <p>This theme is responsive, so it will looks awesome on all mobile devices. </p>
+                    <h3>Akurat & Luas</h3>
+                    <!-- <p>This theme is responsive, so it will looks awesome on all mobile devices. </p> -->
                 </article>
             </div>
             <!-- Icon Box End -->
@@ -111,8 +111,8 @@
             <div class="one-third column">
                 <article class="icon-box">
                     <i class="icon-flask"></i>
-                    <h3>Retina Ready</h3>
-                    <p>Nevia is ready for retina and looks fantastic on high-resolution displays.</p>
+                    <h3>Mudah Dipahami</h3>
+                    <!-- <p>Nevia is ready for retina and looks fantastic on high-resolution displays.</p> -->
                 </article>
             </div>
             <!-- Icon Box End -->

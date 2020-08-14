@@ -174,11 +174,11 @@
 	<li><a href="#"><i class="halflings white certificate"></i> Klimatologi</a>
 		<!-- Second Level / Start -->
 		<ul>
-			<li class="longli"><a href="shop.html">Prakiraan & Analisis Hujan Bulanan</a></li>
-			<li class="longli"><a href="product-page.html">Prakiraan Musim</a></li>
-			<li class="longli"><a href="product-page.html">Informasi Hari Tanpa Hujan</a></li>
-			<li class="longli"><a href="product-page.html">Indeks Presipitasi Terstandarisasi</a></li>
-			<li class="longli"><a href="product-page.html">Kaleidoskop Iklim</a></li>
+			<li class="longli"><a href="{{route('ppahb')}}">Prakiraan & Analisis Hujan Bulanan</a></li>
+			<li class="longli"><a href="{{route('ppm')}}">Prakiraan Musim</a></li>
+			<li class="longli"><a href="{{route('pihth')}}">Informasi Hari Tanpa Hujan</a></li>
+			<li class="longli"><a href="{{route('pipt')}}">Indeks Presipitasi Terstandarisasi</a></li>
+			<li class="longli"><a href="{{route('pkalei')}}">Kaleidoskop Iklim</a></li>
 		</ul>
 		<!-- Second Level / End -->
 	</li>

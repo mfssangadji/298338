@@ -31,7 +31,7 @@
 			</article>
 
 			<!-- About Author -->
-			<section class="about-author">
+			<!-- <section class="about-author">
 				<img src="images/about.jpg" alt="" />
 				<div class="about-description">
 					<h4>Title</h4>
@@ -42,7 +42,7 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Divider -->
 			<div class="line"></div>

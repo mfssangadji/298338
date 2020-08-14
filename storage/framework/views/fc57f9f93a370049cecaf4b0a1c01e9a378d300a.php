@@ -39,11 +39,11 @@
 
 				<header class="meta">
 					<h2><a href="#"><?php echo e($art->last()->title); ?></a></h2>
-					<span><i class="halflings user"></i>By <a href="#">admin</a></span>
-					<span><i class="halflings tag"></i><a href="#">Boating</a>, <a href="#">Recreation</a></span>
+					<!-- <span><i class="halflings user"></i>By <a href="#">admin</a></span> -->
+					<!-- <span><i class="halflings tag"></i><a href="#">Boating</a>, <a href="#">Recreation</a></span> -->
 				</header>
 
-				<p><?php echo e($art->last()->description); ?></p>
+				<p><?php echo $art->last()->description; ?></p>
 
 			</section>
 
